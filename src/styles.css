@@ -1,0 +1,76 @@
+:root {
+  --text-color: #fff;
+  --bg-color: #252525;
+  --border-color: #444;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.ant-input,
+.ant-input-textarea,
+#date-input {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+  margin-bottom: 20px;
+}
+
+.ant-input:focus,
+.ant-input-textarea:focus {
+  border-color: var(--text-color);
+}
+input[type="date"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+}
+
+.ant-btn {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border-color: var(--text-color);
+  margin-top: 1rem;
+}
+
+.ant-btn:hover,
+.ant-btn:focus {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+.todo-table {
+  background-color: #777;
+  color: #222;
+  border-color: var(--border-color);
+}
+
+.ant-table-cell {
+  border-color: #777;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background-color: #555;
+}
